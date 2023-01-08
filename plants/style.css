@@ -1,0 +1,481 @@
+  
+  html {
+    scroll-behavior: smooth; 
+  }
+
+  body {
+    margin: 0;
+  }
+   /* Main Style Start */
+   
+   main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   /* Main Style End */
+
+   /* Header Style Start */
+   header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EDF2EC;
+   }
+   .header_wrapper {
+    width: 1440px;
+    height: 134px;
+    display: flex;
+    justify-content: space-between;
+   }
+   .logo {
+    height: 21.04px;
+    margin-left: 111px;
+    margin-top: 52px;
+   }
+   .navbar {
+    display: flex;
+    align-items: center;
+   }
+   .navbar_list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 110px;
+   }
+   .navbar_item {
+    font-family: 'Inika', serif;
+    margin-left: 47px;
+   }
+
+   #home_button {
+    color: #E06733;
+   }
+
+   #home_button:hover {
+    color: #000000;
+   }
+   .navbar_link {
+    text-decoration: none;
+    color: #010201;
+    line-height: 50px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+   }
+
+   .navbar_link:hover {
+    color: #E06733;
+   }
+   /* Header Style End */
+
+   /* Welcome Style Start */
+   .section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   #welcome {
+    background-color: #EDF2EC;
+   }
+
+   .welcome_wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 1440px;
+    padding: 0 109px;
+   }
+
+   .leafs_img {
+    width: 460px; 
+
+   }
+   .welcome_div {
+    width: 549px;
+    font-family: 'Inter', sans-serif;
+    margin-top: 98px;
+    margin-bottom: 94px;
+   }
+   h1 {
+    font-size: 45px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 50px;
+    color: #717171;
+    margin: 0;
+   }
+   .plants_highlight {
+    color: #499A18;
+   }
+
+   .lorem_text {
+    font-size: 20px;
+    line-height: 35px;
+    color: #636060;
+    margin-top: 43px;
+    margin-bottom: 48px;
+   }
+
+   .welcome_button {
+    width: 158px;
+    height: 44px;
+    border-radius: 10px;
+    border: 2px solid #E06733;
+    line-height: 20px;
+    font-size: 16px;
+    background-color: #EDF2EC;
+   }
+
+   .welcome_button:hover {
+    background-color: #E06733;
+    color: #FFFFFF;
+   }
+   /* Welcome Style End */
+
+   /* About Style Start */
+   #about {
+    background-color: #FFFFFF;
+   }
+
+   .about_wrapper{ 
+    width: 1440px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 109px;
+   }
+
+   .about_div {
+    width: 605px;
+    margin-top: 161px;
+   }
+   .h2_about {
+    width: 463px;
+    color: #499A18;
+    font-family: 'Inika', serif;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 52px;
+    margin: 0;
+   }
+   .about_highlight {
+    color: #E06733;
+   }
+
+   .lorem_about {
+    width: 605px;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Inter', sans-serif;
+    color: #636060;
+    margin-top: 40px;
+   }
+
+   .monstera_img {
+    width: 464px;
+    height: 479px;
+    margin-top: 93px;
+    margin-bottom: 94px;
+   }
+
+   /* About Style End */
+
+   /* Service Style Start */
+
+   #service {
+    background-color: #EDF2EC;
+   }
+
+   .service_wrapper {
+    box-sizing: border-box;
+    width: 1440px;
+    padding: 0 109px 67px 109px;
+   }
+
+   .service_content {
+    display: flex;
+    width: 1007px;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 80px;
+   }
+
+   .h2_service {
+    width: 306px;
+    color: #499A18;
+    font-family: 'Inika', serif;
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 52px;
+    margin: 0;
+   }
+
+   .service_btn {
+    width: 161px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #E06733;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Inika', serif;
+    color: #E06733;
+    margin-left: 34px;
+    margin-top: 29px;
+    background-color: #EDF2EC;
+   }
+
+   .service_btn:hover {
+    background-color: #E06733;
+    color: #FFFFFF;
+   }
+
+   .service_blocks {
+    
+    margin-bottom: 54px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .service_item {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .service_img {
+    width: 329px;
+   }
+   .service_text {
+    width: 329px;
+    border: 1px solid #E3E1D5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .service_h3 {
+    margin: 0;
+    color: #E06733;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 8px;
+   }
+
+   .service_p {
+    font-family: 'Inter', sans-serif;
+    margin: 12px 0 35px 0;
+    line-height: 20px;
+    color: #717171;
+   }
+
+   /* Service Style End */
+
+   /* Prices Style Start */
+
+   .prices_wrapper {
+    box-sizing: border-box;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 109px 111px;
+   }
+
+   .prices_col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+   }
+
+   .prices_col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   }
+
+   .prices_h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-top: 40px;
+   }
+
+   .green_h2 {
+    color: #499A18;
+   }
+
+   #gardeners_text {
+    width: 452px;
+    text-align: right;
+   }
+   .prices_btn {
+    width: 161px;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid #E06733;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: 'Inika', serif;
+    color: #E06733;
+    background-color: #FFFFFF;
+   }
+
+   .prices_btn:hover {
+    background-color: #E06733;
+    color: #FFFFFF;
+   }
+
+   .leafs_img2 {
+    width: 162px;
+    margin-top: 35px;
+   }
+
+   details {
+    background-color: #EDF2EC;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+   
+    
+   }
+   summary {
+    padding-left: 40px;
+    list-style-type: none;
+    padding-top: 13px; 
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .summ_btn {
+    padding-right: 40px;
+   }
+
+   .details_block {
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    padding: 17px 40px 1px 40px ;
+    margin-top: 25px;
+   }
+ 
+   /* Prices Style End */
+
+   /* Contacts Style Start */
+
+   #contacts {
+    background-color: #EDF2EC;
+   }
+
+   .contacts_wrapper {
+    box-sizing: border-box;
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 109px;
+   }
+
+   .contact_img {
+    width: 400px;
+    margin-top: 53px;
+   }
+
+   .contacts_h2 {
+    color: #499A18;
+    font-family: 'Inika', serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: 60px;
+    margin-left: 45px;
+   }
+
+   #city_select {
+    width: 450px;
+    height: 50px;
+    background-color: #D6E7D2;
+    border-style: none;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 148px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 20px;
+    color: #717171;
+    appearance: none;
+    background-image: url(assets/SVG/accordion_btn_1.svg);
+    background-repeat: no-repeat, repeat;
+    background-position: right 1.7em top 50%, 0 0;
+   }
+
+   /* Contacts Style End */  
+
+
+   /* Footer Style Start */
+   footer{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+   }
+
+   .footer_wrapper {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 109px;
+   
+   }
+
+   .text_block {
+    display: flex;
+    
+   }
+
+   .footer_text {
+    margin: 0;
+    padding-right: 21px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 54px;
+   }
+
+   .footer_text2 {
+    margin: 0;
+    padding-left: 10px;
+    color: #000000;
+    text-decoration: none;
+    margin-top: 54px;
+    padding-left: 58px;
+   }
+
+   .footer-link {
+    color: #000000;
+    text-decoration: none;
+    
+   }
+
+   .footer_smm {
+    margin: 0;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+   }
+
+   .contact_li {
+    list-style-type: none;
+    padding-left: 20px;
+   }
+
+
+
+   /* Footer Style Start */
