@@ -9,10 +9,10 @@
    /* Main Style Start */
    
    main {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
    }
    /* Main Style End */
 
@@ -22,17 +22,19 @@
     flex-direction: column;
     align-items: center;
     background-color: #EDF2EC;
+    
    }
    .header_wrapper {
-    width: 1440px;
-    height: 134px;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1440px;
+    padding: 42px 110px;
     display: flex;
     justify-content: space-between;
    }
    .logo {
     height: 21.04px;
-    margin-left: 111px;
-    margin-top: 52px;
+    margin-top: 10px;
    }
    .navbar {
     display: flex;
@@ -40,14 +42,16 @@
    }
    .navbar_list {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin: 0;
     padding: 0;
-    margin-right: 110px;
    }
    .navbar_item {
     font-family: 'Inika', serif;
     margin-left: 47px;
+    white-space: nowrap;
+    cursor: pointer;
    }
 
    #home_button {
@@ -56,6 +60,7 @@
 
    #home_button:hover {
     color: #000000;
+    transition: all 0.3s ease-out;
    }
    .navbar_link {
     text-decoration: none;
@@ -86,16 +91,17 @@
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     padding: 0 109px;
    }
 
    .leafs_img {
-    width: 460px; 
-
+    width: 460px;
    }
+
    .welcome_div {
-    width: 549px;
+    max-width: 549px;
     font-family: 'Inter', sans-serif;
     margin-top: 98px;
     margin-bottom: 94px;
@@ -128,6 +134,8 @@
     line-height: 20px;
     font-size: 16px;
     background-color: #EDF2EC;
+    cursor: pointer;
+    
    }
 
    .welcome_button:hover {
@@ -142,7 +150,8 @@
    }
 
    .about_wrapper{ 
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
@@ -150,11 +159,11 @@
    }
 
    .about_div {
-    width: 605px;
+    max-width: 605px;
     margin-top: 161px;
    }
    .h2_about {
-    width: 463px;
+    max-width: 463px;
     color: #499A18;
     font-family: 'Inika', serif;
     font-size: 40px;
@@ -167,7 +176,7 @@
    }
 
    .lorem_about {
-    width: 605px;
+    max-width: 605px;
     font-size: 20px;
     line-height: 30px;
     font-family: 'Inter', sans-serif;
@@ -192,20 +201,21 @@
 
    .service_wrapper {
     box-sizing: border-box;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     padding: 0 109px 67px 109px;
    }
 
    .service_content {
     display: flex;
-    width: 1007px;
+    max-width: 1007px;
     justify-content: space-between;
     padding-top: 40px;
     padding-bottom: 80px;
    }
 
    .h2_service {
-    width: 306px;
+    max-width: 306px;
     color: #499A18;
     font-family: 'Inika', serif;
     font-size: 40px;
@@ -226,6 +236,7 @@
     margin-left: 34px;
     margin-top: 29px;
     background-color: #EDF2EC;
+    cursor: pointer;
    }
 
    .service_btn:hover {
@@ -234,10 +245,10 @@
    }
 
    .service_blocks {
-    
-    margin-bottom: 54px;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
    }
 
    .service_item {
@@ -245,11 +256,50 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 54px;
    }
 
    .service_img {
-    width: 329px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
    }
+
+   .woman_img {
+    background-image: url("./assets/1x/first.png");
+    width: 329px;
+    height: 350px;
+   }
+
+   .lemon_img {
+    background-image: url("./assets/1x/lemon.png");
+    width: 329px;
+    height: 350px;
+   }
+
+   .spray_img {
+    background-image: url("./assets/1x/spray.png");
+    width: 329px;
+    height: 350px;
+   }
+
+   .busket_img {
+    background-image: url("./assets/1x/busket.png");
+    width: 329px;
+    height: 350px; 
+   }
+
+   .sukkulent_img {
+    background-image: url("./assets/1x/sukkulent.png");
+    width: 329px;
+    height: 350px; 
+   }
+
+   .hands_img {
+    background-image: url("./assets/1x/hands.png");
+    width: 329px;
+    height: 350px; 
+   }
+
    .service_text {
     width: 329px;
     border: 1px solid #E3E1D5;
@@ -282,7 +332,8 @@
 
    .prices_wrapper {
     box-sizing: border-box;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     padding: 0 109px 111px;
@@ -313,7 +364,7 @@
    }
 
    #gardeners_text {
-    width: 452px;
+    max-width: 452px;
     text-align: right;
    }
    .prices_btn {
@@ -326,6 +377,7 @@
     font-family: 'Inika', serif;
     color: #E06733;
     background-color: #FFFFFF;
+    cursor: pointer;
    }
 
    .prices_btn:hover {
@@ -334,7 +386,7 @@
    }
 
    .leafs_img2 {
-    width: 162px;
+    max-width: 162px;
     margin-top: 35px;
    }
 
@@ -357,6 +409,7 @@
     padding-top: 13px; 
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
    }
 
    .summ_btn {
@@ -380,14 +433,15 @@
 
    .contacts_wrapper {
     box-sizing: border-box;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     padding: 0 109px;
    }
 
    .contact_img {
-    width: 400px;
+    max-width: 400px;
     margin-top: 53px;
    }
 
@@ -398,10 +452,11 @@
     font-size: 40px;
     line-height: 52px;
     margin-top: 60px;
-    margin-left: 45px;
+    margin-left: 41px;
    }
 
    #city_select {
+    max-width: 100%;
     width: 450px;
     height: 50px;
     background-color: #D6E7D2;
@@ -413,9 +468,14 @@
     padding-left: 20px;
     color: #717171;
     appearance: none;
-    background-image: url(assets/SVG/accordion_btn_1.svg);
+    background-image: url("./assets/SVG/accordion_btn_1.svg");
     background-repeat: no-repeat, repeat;
     background-position: right 1.7em top 50%, 0 0;
+    cursor: pointer;
+   }
+
+   .contact_img2 {
+    display: none;
    }
 
    /* Contacts Style End */  
@@ -426,18 +486,23 @@
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
    }
 
    .footer_wrapper {
    display: flex;
    justify-content: space-between;
+   box-sizing: border-box;
+   width: 100%;
    padding: 0 109px;
-   
+   max-width: 1440px;
    }
 
    .text_block {
     display: flex;
-    
    }
 
    .footer_text {
@@ -475,7 +540,483 @@
     list-style-type: none;
     padding-left: 20px;
    }
+   /* Footer Style End */
+
+   /* Adaptive */
+
+   /* Tablet version Start */
+
+   @media (max-width: 768px) {
+    .header_wrapper {
+      max-width: 768px;
+      padding: 35px 52px 35px 50px;
+     }
+    
+     .welcome_wrapper {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 768px;
+      padding: 38px 50px 70px 50px;
+     }
+
+     h1 {
+      font-size: 35px;
+      margin: 0;
+     }
+
+     .lorem_text {
+      font-size: 16px;
+      line-height: 25px;
+      max-width: 341px;
+      margin-top: 29px;
+      margin-left: 3px;
+      margin-bottom: 35px;
+     }
+
+     .leafs_img {
+      width: 280px;
+      height: 254px;
+     }
+
+     .welcome_div {
+      margin: 0;
+     }
+
+     .about_wrapper{ 
+      width: 100%;
+      max-width: 768px;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      align-items: center;
+      padding: 40px 50px 70px 50px;
+     }
+
+     .about_div {
+      max-width: 668px;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+     }
+
+     .h2_about {
+      max-width: 463px;
+      font-size: 35px;
+      line-height: 45.6px;
+      text-align: center;
+     }
+
+     .lorem_about {
+      
+      max-width: 668px;
+      width: 100%;
+      margin-top: 50px;
+     }
+  
+     .monstera_img {
+      width: 250px;
+      height: 258px;
+      margin-top: 50px;
+      margin-bottom: 28px;
+     }
+
+     .service_wrapper {
+      max-width: 768px;
+      padding: 55px 50px 30px 50px;
+     }
+
+     .service_content {
+      display: block;
+      width: 100%;
+      padding-top: 0;
+      padding-bottom: 40px;
+     }
+
+     .h2_service {
+      font-size: 35px;
+      font-weight: normal;
+      line-height: 45.61px;
+      margin: 0;
+     }
+
+     .service_btn {
+      margin-left: 0;
+      margin-right: 34px;
+      margin-top: 44px;
+     }
+
+     .service_blocks {
+      max-width: 768px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+     }
+
+     .service_text {
+      max-width: 280px;
+     }
+
+     .service_p {
+      max-width: 201px;
+      text-align: center;
+      margin: 10px 0 16px 0;
+     }
+
+     .woman_img {
+      background-image: url("./assets/1x/first1.png");
+      width: 281px;
+      height: 350px;
+     }
+  
+     .lemon_img {
+      background-image: url("./assets/1x/lemon1.png");
+      width: 281px;
+      height: 350px;
+     }
+  
+     .spray_img {
+      background-image: url("./assets/1x/spray1.png");
+      width: 281px;
+      height: 350px;
+     }
+  
+     .busket_img {
+      background-image: url("./assets/1x/busket1.png");
+      width: 281px;
+      height: 350px; 
+     }
+  
+     .sukkulent_img {
+      background-image: url("./assets/1x/sukkulent1.png");
+      width: 281px;
+      height: 350px; 
+     }
+  
+     .hands_img {
+      background-image: url("./assets/1x/hands1.png");
+      width: 281px;
+      height: 350px; 
+     }
+
+     .service_item {
+      margin-bottom: 38px;
+     }
+
+     .prices_wrapper {
+      max-width: 768px;
+      padding: 43px 50px 79px 50px;
+      flex-wrap: wrap;
+     }
+
+     .prices_h2 {
+      font-size: 35px;
+      line-height: 42.36px;
+      margin-top: 0px;
+      margin-left: 15px;
+     }
+
+     .prices_h3 {
+      font-size: 25px;
+      line-height: 35px;
+      max-width: 296px;
+      margin-top: 97px;
+      margin-bottom: 30px;
+     }
+
+     .contacts_wrapper {
+      max-width: 768px;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 50px 0px 50px;
+     }
+
+     .contact_img {
+      display: none;
+     }
+
+     .contact_img2 {
+      display: block;
+      background-image: url("./assets/1x/contact_woman2.png");
+      width: 200px;
+      height: 248.49px;
+      margin-left: 20px;
+     }
+
+     .contacts_h2 {
+      margin: 0;
+     }
+
+     #city_select {
+      margin-top: 100px;
+      margin-bottom: 250px;
+     }
+
+     .footer_wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 0 50px;
+      max-width: 768px;
+      }
+
+      .footer_text {
+        margin-top: 30px;
+       }
+
+      .text_block {
+        margin-left: 18px;
+      }
+
+      .footer_text2 {
+        margin: 0;
+        margin-top: 15px;
+        padding-left: 0;
+       }
+
+      .footer_smm {
+        margin-right: 58px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+      }
 
 
+   }
 
-   /* Footer Style Start */
+   /* Tablet version End */
+
+   /* Mobile version Start */
+
+   @media (max-width: 380px) {
+
+    .header_wrapper {
+    max-width: 380px;
+    padding: 35px 25px 35px 25px;
+    }
+
+    .logo {
+      margin-top: 0;
+     }
+   
+    .navbar {
+    display: none;
+   }
+
+   .leafs_img {
+    display: none;
+   }
+
+   .leafs_img2 {
+    display: none;
+   }
+
+   .welcome_wrapper {
+    max-width: 380px;
+    padding: 25px;
+   }
+
+   h1 {
+    font-size: 25px;
+    line-height: 35px;
+   }
+
+   .lorem_text {
+    font-size: 16px;
+    line-height: 25px;
+    max-width: 341px;
+    margin-top: 22px;
+    margin-left: 0;
+    margin-bottom: 25px;
+   }
+
+   .welcome_button {
+    width: 100px;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 10px;
+   }
+
+   .about_wrapper{ 
+    max-width: 380px;
+    padding: 30px 25px;
+   }
+
+   .h2_about {
+    width: 288px;
+    font-size: 25px;
+    line-height: 32.5px;
+   }
+
+   .lorem_about {
+    width: 330px;
+    font-size: 15px;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 0;
+   }
+
+   .monstera_img {
+    width: 150px;
+    height: 147px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+   }
+
+   .service_wrapper {
+    max-width: 380px;
+    padding: 30px 25px 0 25px;
+   }
+
+   .service_content {
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 30px;
+   }
+
+   .h2_service {
+    font-size: 25px;
+    max-width: 187px;
+    line-height: 32.5px;
+    margin-bottom: 38px;
+   }
+
+   .service_btn {
+    width: 121px;
+    height: 35px;
+    margin-left: 0;
+    margin-right: 5px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+   }
+
+   .service_blocks {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+   }
+
+   .service_item {
+    margin-bottom: 33px;
+   }
+
+   .prices_wrapper {
+    max-width: 380px;
+    padding: 20px 25px 40px 25px;
+    flex-direction: column;
+   }
+
+   .prices_h2 {
+    font-size: 25px;
+    line-height: 30.26px;
+    margin: auto;
+   }
+
+   .prices_h3 {
+    font-size: 20px;
+    line-height: 35px;
+    max-width: 230px;
+    margin-top: 19px;
+    margin-bottom: 20px;
+   }
+
+   #gardeners_text {
+    text-align: center;
+   }
+
+   details {
+    width: 180px;
+    height: 49.7px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 14px;
+   }
+
+   summary {
+    padding-left: 31px;
+    list-style-type: none;
+    padding-top: 16px; 
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .summ_btn {
+    padding-right: 39px;
+    padding-top: 2px;
+   }
+
+   .details_block {
+    border-radius: 20px;
+    padding: 29px 20px 14px 20px ;
+    margin: auto;
+    margin-top: 36px;
+   }
+
+   .prices_btn {
+    width: 121px;
+    height: 35px;
+    font-size: 15px;
+    line-height: 19.54px;
+   }
+
+   .prices_col1 {
+    align-items: center;
+   }
+
+   .prices_col2 {
+    align-items: center;
+   }
+
+   .contacts_h2 {
+    font-size: 25px;
+    line-height: 32.57px;
+   }
+
+   .contacts_wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px 0 20px;
+   }
+
+   .contact_img2 {
+    width: 100px;
+    height: 124.25px;
+    background-image: url("./assets/1x/contact_woman3.png");
+    margin: auto;
+   }
+
+   #city_select {
+    width: 300px;
+    height: 50px;
+    margin-top: 81px;
+    padding-left: 20px;
+    color: #717171;
+    background-position: right 1.1em top 50%, 0 0;
+    margin-bottom: 132px;
+   }
+
+   .footer_wrapper {
+    width: 100%;
+    padding: 0 20px;
+    max-width: 380px;
+    }
+
+    .footer_text {
+    margin-top: 22px;
+    }
+
+    .footer_smm {
+      margin-top: 15px;
+    }
+  }
+   /* Mobile version End */
