@@ -21,9 +21,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #EDF2EC;
-    
    }
+
+   .header_color {
+    background-color: #EDF2EC;
+   }
+
    .header_wrapper {
     width: 100%;
     box-sizing: border-box;
@@ -35,6 +38,7 @@
    .logo {
     height: 21.04px;
     margin-top: 10px;
+    z-index: 3;
    }
    .navbar {
     display: flex;
@@ -72,7 +76,19 @@
 
    .navbar_link:hover {
     color: #E06733;
+    transition: all 0.3s ease-out;
    }
+
+   .toggle_svg {
+    display: none;
+   }
+
+   .mobile_nav {
+    opacity: 0;
+   }
+
+  
+
    /* Header Style End */
 
    /* Welcome Style Start */
@@ -141,6 +157,7 @@
    .welcome_button:hover {
     background-color: #E06733;
     color: #FFFFFF;
+    transition: all 0.3s ease-out;
    }
    /* Welcome Style End */
 
@@ -242,6 +259,7 @@
    .service_btn:hover {
     background-color: #E06733;
     color: #FFFFFF;
+    transition: all 0.3s ease-out;
    }
 
    .service_blocks {
@@ -383,6 +401,7 @@
    .prices_btn:hover {
     background-color: #E06733;
     color: #FFFFFF;
+    transition: all 0.3s ease-out;
    }
 
    .leafs_img2 {
@@ -513,6 +532,11 @@
     margin-top: 54px;
    }
 
+   .footer_text:hover {
+    transition: all 0.3s ease-out;
+    color: #E06733;
+   }
+
    .footer_text2 {
     margin: 0;
     padding-left: 10px;
@@ -522,10 +546,19 @@
     padding-left: 58px;
    }
 
+   .footer_text2:hover {
+    transition: all 0.3s ease-out;
+    color: #E06733;
+   }
+
    .footer-link {
     color: #000000;
     text-decoration: none;
-    
+   }
+
+   .footer-link:hover {
+    filter: invert(50%) sepia(61%) saturate(1615%) hue-rotate(339deg) brightness(91%) contrast(92%);
+    transition: all 0.3s ease-out;
    }
 
    .footer_smm {
@@ -798,13 +831,56 @@
     padding: 35px 25px 35px 25px;
     }
 
-    .logo {
-      margin-top: 0;
-     }
+
+  .logo {
+    margin-top: 0;
+  }
    
     .navbar {
     display: none;
    }
+
+   .toggle_svg {
+    border: 0;
+    cursor: pointer;
+    display: block;
+    background-image: url("./assets/SVG/burger.svg");
+    width: 40px;
+    height: 26px;
+    background-color: transparent;
+    z-index: 3;
+   }
+
+   .open {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+   }
+
+   .mobile_nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+   }
+
+   .logo_z {
+    z-index: 3;
+   }
+
+   .navbar_list {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 62px;
+    align-items: center;
+    background-color: #FFFFFF;
+   }
+
+   .navbar_item {
+    margin: 0;
+   }
+
 
    .leafs_img {
     display: none;
