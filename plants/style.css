@@ -84,8 +84,9 @@
    }
 
    .mobile_nav {
-    opacity: 0;
+    transform: translateY(-100%);
     display: none;
+    transition: all 0.3s ease-out;
    }
 
   
@@ -749,15 +750,18 @@
       font-size: 35px;
       line-height: 42.36px;
       margin-top: 0px;
-      margin-left: 15px;
+      margin-left: 15px; 
      }
 
      .prices_h3 {
       font-size: 25px;
       line-height: 35px;
-      max-width: 296px;
       margin-top: 97px;
       margin-bottom: 30px;
+     }
+
+     #gardeners_text {
+      max-width: 296px;
      }
 
      .contacts_wrapper {
@@ -833,9 +837,9 @@
     }
 
 
-  .logo {
-    margin-top: 0;
-  }
+    .logo {
+      margin-top: 0;
+    }
    
     .navbar {
     display: none;
@@ -852,9 +856,14 @@
     z-index: 3;
    }
 
+   .cross {
+    background-image: url("./assets/SVG/cross.svg");
+    background-repeat: no-repeat, repeat;
+   }
+
    .open {
     transition: all 0.3s ease-in-out;
-    opacity: 1;
+    transform: translate(0);
    }
 
    .mobile_nav {
