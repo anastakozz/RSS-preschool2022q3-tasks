@@ -63,7 +63,6 @@
             </li>
           </ul>
         </div>
-        <script src="index.js"></script>
       </div>
     </header>
     <main>
@@ -113,27 +112,27 @@
           <div class="service_content">
             <h2 class="h2_service">Service and our projects</h2>
             <div class="btn">
-              <button class="service_btn">Gardens</button>
-              <button class="service_btn">Lawn</button>
-              <button class="service_btn">Planting</button>
+              <button class="service_btn garden_btn">Gardens</button>
+              <button class="service_btn lawn_btn">Lawn</button>
+              <button class="service_btn planting_btn">Planting</button>
             </div>
           </div>
           <div class="service_blocks">
-            <div class="service_item">
+            <div class="service_item garden">
               <span class="service_img woman_img"></span>
               <div class="service_text">
                 <h3 class="service_h3">Garden care</h3>
                 <p class="service_p">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="service_item">
+            <div class="service_item planting">
               <span class="service_img lemon_img"></span>
               <div class="service_text">
                 <h3 class="service_h3">Planting</h3>
                 <p class="service_p">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="service_item">
+            <div class="service_item lawn">
               <span class="service_img spray_img"></span>
               <div class="service_text">
                 <h3 class="service_h3">Lawn care</h3>
@@ -141,21 +140,21 @@
               </div>
             </div>
 
-            <div class="service_item">
+            <div class="service_item planting">
               <span class="service_img busket_img"></span>
               <div class="service_text">
                 <h3 class="service_h3">Planting</h3>
                 <p class="service_p">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="service_item">
+            <div class="service_item garden">
               <span class="service_img sukkulent_img"></span>
               <div class="service_text">
                 <h3 class="service_h3">Garden care</h3>
                 <p class="service_p">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="service_item">
+            <div class="service_item planting">
               <span class="service_img hands_img"></span>
               <div class="service_text">
                 <h3 class="service_h3">Planting</h3>
@@ -170,35 +169,59 @@
           <div class="prices_col1">
             <h2 class="prices_h2">Prices</h2>
             <div class="details_block">
-              <details>
-                <summary>
+              <details class="detail">
+                <summary class="sum basic">
                   Basics
-                  <img
-                    class="summ_btn"
-                    src="./assets/SVG/accordion_btn.svg"
-                    alt="btn"
-                  />
+                  <div class="summ_btn sum_btn_1"></div>
                 </summary>
+                <hr class="line" />
+                <p class="detailes_text">
+                  Release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently
+                </p>
+                <p class="price_detailes">
+                  <span class="dollar_sign">$</span
+                  ><span class="price_exact">15 </span>/ per hour
+                </p>
+                <button class="order_btn">
+                  <a class="order_btn_link" href="#contacts">Order</a>
+                </button>
               </details>
-              <details>
-                <summary>
+              <details class="detail">
+                <summary class="sum standard">
                   Standard
-                  <img
-                    class="summ_btn"
-                    src="./assets/SVG/accordion_btn.svg"
-                    alt="btn"
-                  />
+                  <div class="summ_btn sum_btn_2"></div>
                 </summary>
+                <hr class="line" />
+                <p class="detailes_text">
+                  Release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently
+                </p>
+                <p class="price_detailes">
+                  <span class="dollar_sign">$</span
+                  ><span class="price_exact">25 </span>/ per hour
+                </p>
+                <button class="order_btn">
+                  <a class="order_btn_link" href="#contacts">Order</a>
+                </button>
               </details>
-              <details>
-                <summary>
+              <details class="detail">
+                <summary class="sum pro">
                   Pro care
-                  <img
-                    class="summ_btn"
-                    src="./assets/SVG/accordion_btn.svg"
-                    alt="btn"
-                  />
+                  <div class="summ_btn sum_btn_3"></div>
                 </summary>
+                <hr class="line" />
+                <p class="detailes_text">
+                  Release of Letraset sheets containing Lorem Ipsum passages,
+                  and more recently
+                </p>
+                <p class="price_detailes">
+                  <span class="dollar_sign">$</span
+                  ><span class="price_exact">35 </span>/ per hour
+                </p>
+                <button class="order_btn">
+                  <a class="order_btn_link" href="#contacts">Order</a>
+                </button>
               </details>
             </div>
           </div>
@@ -263,5 +286,6 @@
         </ul>
       </div>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
