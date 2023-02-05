@@ -10,12 +10,16 @@ const garden_blocks = document.querySelectorAll(".garden");
 const lawn_blocks = document.querySelectorAll(".lawn");
 const plant_blocks = document.querySelectorAll(".planting");
 const serv_items = document.querySelectorAll(".service_item");
-// Acoordeon constants
+// Accordeon constants
 const details_coll = document.querySelectorAll(".detail");
 const standart_sum = document.querySelector('.standard');
 const basic_sum = document.querySelector('.basic');
 const pro_sum = document.querySelector('.pro');
 const summaries = document.querySelectorAll('.sum');
+// Select const
+const select_header = document.querySelector('.select_header');
+const select_option = document.querySelectorAll('.select_option');
+const selector = document.querySelector('.select');
 
 
 
@@ -23,6 +27,7 @@ const myToggleFunc = (event) => {
     mobNav.classList.toggle("open");
     myToggle.classList.toggle("cross");
 }
+
 const BlurFunc = (event) => {
     if(event.target.classList.contains ('planting_btn')) {
 
@@ -103,6 +108,16 @@ const detailFunc = (event) => {
  })
 }
 
+const selectFunc = (event) => {
+    event.target.parentElement.classList.toggle('is_active');
+}
+
+const optionFunc = (event) => {
+    let text = event.target.innerText;
+    let currentText = document.querySelector('.select_current');
+    currentText.innerText = text;
+    selector.classList.remove('is_active');
+}
 
 
 myToggle.addEventListener("click", myToggleFunc);
@@ -117,4 +132,9 @@ ser_planting_btn.addEventListener("click", BlurFunc);
 
 summaries.forEach(sum => {
     sum.addEventListener("click", detailFunc);
+})
+
+select_header.addEventListener("click", selectFunc);
+select_option.forEach(opt => {
+    opt.addEventListener("click", optionFunc)
 })

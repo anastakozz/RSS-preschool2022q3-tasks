@@ -22,11 +22,9 @@
     flex-direction: column;
     align-items: center;
    }
-
    .header_color {
     background-color: #EDF2EC;
    }
-
    .header_wrapper {
     width: 100%;
     box-sizing: border-box;
@@ -258,13 +256,13 @@
     cursor: pointer;
    }
 
-   /*
+   
    .service_btn:hover {
     background-color: #E06733;
     color: #FFFFFF;
     transition: all 0.3s ease-out;
    }
-   */
+   
 
    .active_btn {
     background-color: #E06733;
@@ -427,6 +425,7 @@
    }
 
    details {
+    box-sizing: border-box;
     background-color: #EDF2EC;
     width: 250px;
     height: 50px;
@@ -436,6 +435,7 @@
     font-size: 20px;
     margin-top: 16px;
     margin-bottom: 32px;
+    padding: 0 40px;
     
    }
 
@@ -447,7 +447,7 @@
 
    .line {
     background-color: #AEA1A1;
-    width: 164px;
+    width: 100%;
     height: 0.5px;
     border: none;
     margin: auto;
@@ -460,13 +460,13 @@
     font-weight: 300;
     font-size: 10px;
     color: #717171;
-    margin-left: 40px;
+    margin: auto;
     margin-top: 6px;
    }
 
    .price_detailes {
-    margin: 0;
-    margin-left: 40px;
+    margin: auto;
+    padding-top: 5px;
     font-size: 12px;
     font-weight: 400;
    }
@@ -495,21 +495,21 @@
     background-color: #FFFFFF;
     border-radius: 10px;
     border-style: none;
-    margin: 12px 0 12px 40px;
+    margin: 12px 0;
    }
 
    details > summary {
-    padding-left: 40px;
     list-style-type: none;
     padding-top: 13px; 
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    white-space: nowrap;
    }
 
    details summary:after {
     content: url(./assets/SVG/accordion_btn.svg);
-    padding-right: 40px;
+    
    }
 
    details[open] summary:after {
@@ -553,10 +553,10 @@
     font-size: 40px;
     line-height: 52px;
     margin-top: 60px;
-    margin-right: 70px;
+    margin-left: 45px;
    }
 
-   #city_select {
+   /* #city_select {
     width: 450px;
     max-width: 100%;
     height: 50px;
@@ -573,6 +573,72 @@
     background-repeat: no-repeat, repeat;
     background-position: right 1.7em top 50%, 0 0;
     cursor: pointer;
+   }
+   */
+
+   .select {
+    width: 450px;
+    margin-top: 148px;
+   }
+
+   .select.is_active .select_body {
+    display: block;
+   }
+
+   .select.is_active .select_header{
+    background-color: #C1E698;
+    box-shadow: none;
+   }
+
+   .select_header {
+    height: 50px;
+    background-color: #D6E7D2;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .select_current {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    padding-left: 35px;
+    color: #717171;
+   }
+
+   .select_btn {
+    width: 16px;
+    height: 16px;
+    background-image: url("./assets/SVG/accordion_btn_1.svg");
+    background-repeat: no-repeat, repeat;
+    margin-right: 35px;
+   }
+
+   .select_body {
+    background-color: #DCE9D9;
+    padding: 22px 35px;
+    display: none;
+   }
+
+   .select_option {
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #499A18;
+    border-bottom: #D9D9D9 1px solid;
+   }
+
+   .select_option:hover {
+    color: #717171;
+    border-bottom: #717171 1px solid;
+   }
+
+   .select_option_text {
+    padding-left: 6px;
+    line-height: 40px;
+    margin: 0;
+    
    }
 
    .contact_img2 {
@@ -867,10 +933,12 @@
       margin: 0;
      }
 
-     #city_select {
+     
+     .select {
       margin-top: 100px;
       margin-bottom: 250px;
      }
+     
 
      .footer_wrapper {
       display: flex;
@@ -1111,7 +1179,6 @@
    }
 
    summary {
-    padding-left: 31px;
     list-style-type: none;
     padding-top: 16px; 
     display: flex;
@@ -1119,7 +1186,6 @@
    }
 
    .summ_btn {
-    padding-right: 39px;
     padding-top: 2px;
    }
 
@@ -1166,15 +1232,14 @@
     margin: auto;
    }
 
-   #city_select {
-    width: 300px;
-    height: 50px;
+   
+   .select {
+    max-width: 100%;
+    margin: auto;
     margin-top: 81px;
-    padding-left: 20px;
-    color: #717171;
-    background-position: right 1.1em top 50%, 0 0;
     margin-bottom: 132px;
    }
+   
 
    .footer_wrapper {
     width: 100%;
