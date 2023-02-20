@@ -16,6 +16,16 @@ const error = document.querySelector('.weather-error');
 const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
 const changeQuote = document.querySelector('.change-quote');
+const playBtn = document.querySelector('.play');
+const prevBtn = document.querySelector('.play-prev');
+const nextBtn = document.querySelector('.play-next');
+let playNum = 0;
+import playList from './playList.js';
+const playListUl = document.querySelector('.play-list');
+
+
+
+
 
 
 function showDate() {
@@ -161,6 +171,70 @@ async function getQuotes() {
 getQuotes();
 
 changeQuote.addEventListener("click", getQuotes);
+
+
+const audio = new Audio();
+let isPlay = false;
+
+function playAudio() {
+    audio.src = playList[playNum].src;
+    audio.currentTime = 0;
+    playBtn.classList.toggle('pause');
+    //const link = document.querySelector('.' + `${playNum}`);
+    //link.classList.toggle('item-active');
+    if (!isPlay) {
+        audio.play();
+        isPlay = true; 
+    } else {
+        audio.pause();
+        isPlay = false;
+    }
+    
+    
+}
+
+playBtn.addEventListener('click', playAudio);
+
+function playNext() {
+    if (isPlay) {
+    audio.pause();
+    isPlay = false;
+    playBtn.classList.toggle('pause');
+    } 
+    
+playNum += 1;
+if (playNum == 4) {
+    playNum = 0;
+}
+playAudio(playNum);
+}
+
+function playPrev() {
+    if (isPlay) {
+        audio.pause();
+        isPlay = false;
+        playBtn.classList.toggle('pause');
+    } 
+    playNum -= 1;
+if (playNum == -1) {
+        playNum = 3;
+}
+
+playAudio(playNum);
+}
+
+nextBtn.addEventListener('click', playNext);
+prevBtn.addEventListener('click', playPrev);
+
+
+playList.forEach((el, i, ) => {
+    const li = document.createElement('li');
+    li.textContent = `${el.title}`;
+    li.classList.add('play-item');
+    li.classList.add(`${i}`)
+    playListUl.append(li);
+})
+
 
 
 
