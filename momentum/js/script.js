@@ -57,6 +57,7 @@ function getTimeOfDay(hours) {
     }
 }
 
+
 function showGreeting() {
     const date = new Date();
     const hours = date.getHours();
@@ -80,9 +81,9 @@ function setBg() {
     const img = new Image();
     const timeOfDay = getTimeOfDay(new Date().getHours());
     const bgNum = `${randomNum}`.padStart(2,'0');
-    img.src = "https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/evening/" + bgNum + ".jpg";
+    img.src = "https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/" + timeOfDay + "/" + bgNum + ".jpg";
     img.onload = () => {  
-        body.style.backgroundImage = "url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/evening/" + bgNum + ".jpg')";
+        body.style.backgroundImage = "url('https://raw.githubusercontent.com/rolling-scopes-school/stage1-tasks/assets/images/" + timeOfDay + "/" + bgNum + ".jpg')";
     };     
 }
 
